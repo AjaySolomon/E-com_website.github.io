@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        h3{
+            color: rgb(255, 26, 76);
+            text-shadow: 1px 2px rgb(13, 13, 14);
+            font-weight:bolder;
+            font-size: x-large;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color: rgb(10, 233, 200);
+            width: 100%;
+            
+        }
+        #button-1{
+            border-radius: 23px;
+            background-color: aqua;
+        }
+        #button-2{
+            color: rgb(7, 1, 1);
+            background-color: rgb(238, 240, 241);
+            height: 30px;
+        }
+    </style>
+    <script>
+        function social() {
+        var sam = document.getElementById("req").value;
+        if (sam == 'Mobile') {
+        window.location.href = "Mobile.html";
+        }
+        else if(sam == 'Laptop'){
+        window.location.href = "Laptop.html";
+        }
+        else if (sam == 'Fashion') {
+        window.location.href = "Fashion.html";
+        }
+        else if (sam == 'TV') {
+        window.location.href = "TV.html";
+        }
+    }
+    </script>
+</head>
+<body style="background-image: url(./bg1.jpg);background-repeat: no-repeat;background-size: cover;background-attachment: fixed;">
+    <div style="height: 100px;width: 100%;border: 0px solid darkblue;background-color: #7a15ffe9;";>
+        <h3>AAA E-MART </h3>
+        <a href="./Homeindex.html"><button id="button-2"><i class="fa-solid fa-house"></i></button> </a> 
+        <input style="border-radius: 45px; height: 32px;width: 343px;background-color: #f2ffee;" type="search"placeholder= "                     search your wishes here!!" >
+        <button id="button-1"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <select id="req" style="border-radius: 40px; height: 34px;width: 200px; color:blue">
+            <option>categories</option>
+            <option value="Mobile"> Mobiles</option>
+            <option value="Laptop">Laptops</option>
+            <option value="Fashion">Fashion</option>
+            <option value="TV">TV</option>
+            <option value="">Top offers</option>
+        </select>
+        <button onclick="social()">Next</button>
+        <a href="./cart.html"><button><i class="fa-solid fa-cart-shopping"></i></button></a>
+    </div>
+    <h2 style="text-align: center;background-color:transparent;width: fit-content;margin-left: 600px;font-weight: bolder;" ><i class="fa-brands fa-apple"></i> SMART PHONES </h2>
+    <fieldset>
+        <h3 style="text-align: center;color: blue;background-color: burlywood;">TOP DEALS OF THE WEEK</h3>
+    </fieldset>
+    <fieldset>
+        <a href="./IPHONE.html"><img style="width: 170px;margin: 30px"; alt="Shop now" src="https://m.media-amazon.com/images/G/31/img21/Wireless/katariy/Category_page/DEC_revamp/Schbang/apple-logo._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img21/Wireless/katariy/Category_page/DEC_revamp/Schbang/apple-logo._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%; max-height:100%;"></a>
+
+        <a href="./VIVO.html"><img style="width: 170px;margin: 30px"; alt="Shop now" src="https://m.media-amazon.com/images/G/31/img21/Wireless/katariy/Category_page/DEC_revamp/Schbang/Layer-5._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img21/Wireless/katariy/Category_page/DEC_revamp/Schbang/Layer-5._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;"></a>
+
+        <a href="./SAMSUNG.html"><img style="width: 170px;margin: 30px"; alt="Shop now" src="https://m.media-amazon.com/images/G/31/img23/Wireless/Samsung/CatPage/Tiles/D40385862_IN_WL_Category-Page_Revamp_Brand-farm2_._SS300_QL85_.jpg" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img23/Wireless/Samsung/CatPage/Tiles/D40385862_IN_WL_Category-Page_Revamp_Brand-farm2_._SS300_QL85_.jpg&quot;:[300,300]}" style="max-width:100%;max-height:100%;"></a>
+
+        <a href="./REDMI.html"><img style="width: 170px;margin: 30px"; alt="Shop now" src="https://m.media-amazon.com/images/G/31/img22/Wireless/Xiaomi/redmi/brand_firm/Mi._CB588273641_.gif" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{}" style="max-width:100%;max-height:100%;"></a>
+
+        <a href="./ONEPLUS.html"><img style="width: 170px;margin: 30px"; alt="Shop now" src="https://m.media-amazon.com/images/G/31/img22/Wireless/ssserene/D40385862_IN_WL_Category-Page_Revamp_Brand-farm2_._SS300_QL85_.jpg" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img22/Wireless/ssserene/D40385862_IN_WL_Category-Page_Revamp_Brand-farm2_._SS300_QL85_.jpg&quot;:[300,300]}" style="max-width:100%;max-height:100%;"></a>
+    </fieldset>
+
+    <fieldset>
+        <img style="width: 170px;margin: 30px;" src="./Mobile images/IPHONE Mobiles/Iphone.jpg" alt="">
+        <img style="width: 170px;margin: 30px;" src="./Mobile images/ONEPLUS Mobiles/oneplus.jpg" alt="">
+        <img style="width: 170px;margin: 30px;" src="./Mobile images/SAMSUNG Mobiles/samsung.jpg" alt="">
+        <img style="width: 170px;margin: 30px;" src="./Mobile images/SAMSUNG Mobiles/IQOO.jpg" alt="">
+        <img style="width: 170px;margin: 30px;" src="./Mobile images/SAMSUNG Mobiles/ONEPLUS.jpg" alt="">
+    </fieldset>
+    <img style="width: 100%;" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/Xiaomi/RedmiA2/EXP_Store/D81179785_INWLD_Redmi_A2_NewLaunch_1242x450_black_bg-1242.gif" alt="MI-EXP">
+    <fieldset>
+        <table>
+            <tr>
+                
+                <th><div><img style="width: 50%;margin-right: 60%;" class="s-image" src="https://m.media-amazon.com/images/I/61LB+d0vheL._AC_UL320_.jpg" srcset="https://m.media-amazon.com/images/I/61LB+d0vheL._AC_UL320_.jpg 1x, https://m.media-amazon.com/images/I/61LB+d0vheL._AC_UL480_QL65_.jpg 1.5x, https://m.media-amazon.com/images/I/61LB+d0vheL._AC_UL640_QL65_.jpg 2x, https://m.media-amazon.com/images/I/61LB+d0vheL._AC_UL800_QL65_.jpg 2.5x, https://m.media-amazon.com/images/I/61LB+d0vheL._AC_UL960_QL65_.jpg 3x" alt="OnePlus Nord CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 128GB Storage)" data-image-index="-1" data-image-load="" data-image-latency="s-product-image" data-image-source-density="1">
+                <div style="width: 50%;">
+                OnePlus Nord CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 128GB Storage)
+                </div>
+                </div>
+                </th>
+                <th>
+                    <div>
+                        <img style="width: 50%;margin-right: 60%;" class="s-image" src="https://m.media-amazon.com/images/I/61QRgOgBx0L._AC_UL320_.jpg" srcset="https://m.media-amazon.com/images/I/61QRgOgBx0L._AC_UL320_.jpg 1x, https://m.media-amazon.com/images/I/61QRgOgBx0L._AC_UL480_QL65_.jpg 1.5x, https://m.media-amazon.com/images/I/61QRgOgBx0L._AC_UL640_QL65_.jpg 2x, https://m.media-amazon.com/images/I/61QRgOgBx0L._AC_UL800_QL65_.jpg 2.5x, https://m.media-amazon.com/images/I/61QRgOgBx0L._AC_UL960_QL65_.jpg 3x" alt="OnePlus Nord CE 3 Lite 5G (Pastel Lime, 8GB RAM, 256GB Storage)" data-image-index="-1" data-image-load="" data-image-latency="s-product-image" data-image-source-density="1">
+                        <div style="width: 50%;">OnePlus Nord CE 3 Lite 5G (Pastel Lime, 8GB RAM, 256GB Storage)</div>
+                    </div>
+
+                </th>
+                <th>
+                    <div><img style="width: 50%;margin-right: 60%;" class="s-image" src="https://m.media-amazon.com/images/I/611jxZCY1bL._AC_UL320_.jpg" srcset="https://m.media-amazon.com/images/I/611jxZCY1bL._AC_UL320_.jpg 1x, https://m.media-amazon.com/images/I/611jxZCY1bL._AC_UL480_QL65_.jpg 1.5x, https://m.media-amazon.com/images/I/611jxZCY1bL._AC_UL640_QL65_.jpg 2x, https://m.media-amazon.com/images/I/611jxZCY1bL._AC_UL800_QL65_.jpg 2.5x, https://m.media-amazon.com/images/I/611jxZCY1bL._AC_UL960_QL65_.jpg 3x" alt="iQOO Z7 5G by vivo (Norway Blue, 6GB RAM, 128GB Storage) | Dimensity 920 5G 6nm Processor | 64MP OIS Ultra Stable Camera |..." data-image-index="-1" data-image-load="" data-image-latency="s-product-image" data-image-source-density="1">
+                        <div  style="width: 50%;">OnePlus 10R 5G (Sierra Black, 8GB RAM, 128GB Storage, 80W SuperVOOC)</div>
+                    </div>
+                </th>
+            </tr>
+        </table>
+    </fieldset>
+    
+</body>
+</html>

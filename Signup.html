@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 1px 500px;
+        font-size: larger;
+        margin-top: 30px;
+    }
+    fieldset{
+        background-color: rgba(85, 238, 255, 0.709);
+        border: 0px   
+    }
+    input{
+        width: 70%;
+        height: 3%;
+        margin-left: 50px;
+        background-color: rgba(211, 211, 211, 0.027);
+        border: 0px;
+        border-radius: 20px;
+        color: aliceblue;
+    }
+    button{
+        height: 6%;
+        width: 10%;
+    }
+    p{
+        color: aqua;
+        margin-left: 50px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: medium;
+    }
+</style>
+<script>
+    function Signup()
+    {
+        //Phone number
+            var Phone_no = document.getElementById("Phone").value;
+            var Phone_flag = false;
+            if((Phone_no>=6000000000)&&(Phone_no<=9999999999))
+            {
+                Phone_flag = true;
+            } 
+        //Mail Id
+            var email = document.getElementById("email").value;
+            var flag = false;
+            var email_flag = false;
+            for(var i = 0;i<email.length;i++)
+            {
+                if(email[i]=='@')
+                {
+                    flag = true;
+                }
+                
+            }
+            if(flag == true)
+            {
+                email_flag = true;
+            }
+            // Password
+
+            var password = document.getElementById("val").value;
+            var pass_flag = false;
+            var upper = 0;
+            var lower = 0;
+            var num = 0;
+            var special = 0;
+            for(var i =0; i<password.length;i++){
+                if(('A'<=password[i])&&('Z'>=password[i]))
+                {
+                    upper++;
+                }
+                else if(('a'<=password[i])&&('z'>=password[i]))
+                {
+                    lower++;
+                }
+                else if(('0'<=password[i])&&('9'>=password[i]))
+                {
+                    num++;
+                }
+                else 
+                {
+                    special++;
+                }
+            }
+            if((password.length>=8)&&(password.length<=16)&&(upper>=1)&&(lower>=1)&&(num>=1)&&(special>=1))
+            {
+                pass_flag = true;
+            }
+            //Confirm Password
+            var confirm_password = document.getElementById("confirm").value;
+            var confirm_flag = false;
+            if(password == confirm_password)
+            {
+                confirm_flag = true;
+            }
+            //Final validation
+            if((Phone_flag==true)&&(email_flag==true)&&(pass_flag==true)&&(confirm_flag==true))
+            {
+                window.location.href = "Login.html";
+            }
+            else{
+                document.getElementById("result").innerHTML = "Invalid Details!!!!!!!!!!!";
+                document.getElementById("result").style.color = "yellow";
+                document.getElementById("result").style.marginTop= '-20px';
+            }
+            
+        }
+</script>
+<body style="background-image: url(https://wallpaperaccess.com/full/750472.jpg);background-repeat: no-repeat;background-size: cover;background-attachment: fixed;">
+    <fieldset style="width: 500px;border-radius: 20px;height: 640px;background: url(https://e0.pxfuel.com/wallpapers/784/858/desktop-wallpaper-3d-computer-33-background.jpg);">
+        <div style="margin-top: 50px;height: 1000px;">
+
+        
+    <strong style="margin-left: 200px;color:aqua;font-family:'Courier New', Courier, monospace;font-size: 20px;">SIGNUP</strong><br>
+    <p>FIRST NAME</p>
+    <input type="text" placeholder="Enter First name"><br>
+    <p>SECOND NAME</p>
+    <label for=""></label><input type="text" placeholder="Enter Middle Name"><br>
+    <p>LAST NAME</p>
+    <input type="text" placeholder="Enter Last Name"><br>
+    <p>EMAIL-ID</p>
+    <input type="email" placeholder="Enter your Email-ID" id="email"><br>
+    <p>MOBILE NO.</p>
+    <input id="Phone"  type="number" placeholder="Enter Mobile Number"><br>
+    <p>PASSWORD</p>
+    <input type="text" placeholder="Enter password " id="val"><br>
+    <p>CONFIRM PASSWORD</p>
+    <input type="text" placeholder="Confirm password" id="confirm"><br><br>
+    <button class="btn btn-primary " onclick="Signup()" style="width: 16%;margin-left:200px ;height: 40px;background-color:rgb(2, 48, 132);color:aquamarine;" type="submit">Submit</button><br><br><br>
+    <p style="margin-left: 170px;" id="result"></p>
+    </div>
+    </fieldset>
+    <script src="/bootstrap-3.4.1-dist/js/jquery.min.js"></script>
+    <script src="/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

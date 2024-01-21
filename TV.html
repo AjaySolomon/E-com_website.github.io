@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        h3{
+            color: rgb(255, 26, 76);
+            text-shadow: 1px 2px rgb(13, 13, 14);
+            font-weight:bolder;
+            font-size: x-large;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color: rgb(10, 233, 200);
+            width: 100%;
+            
+        }
+        #button-1{
+            border-radius: 23px;
+            background-color: aqua;
+        }
+        #button-2{
+            color: rgb(7, 1, 1);
+            background-color: rgb(238, 240, 241);
+            height: 30px;
+        }
+    </style>
+    <script>
+        function social() {
+        var sam = document.getElementById("req").value;
+        if (sam == 'Mobile') {
+        window.location.href = "Mobile.html";
+        }
+        else if(sam == 'Laptop'){
+        window.location.href = "Laptop.html";
+        }
+        else if (sam == 'Fashion') {
+        window.location.href = "Fashion.html";
+        }
+        else if (sam == 'TV') {
+        window.location.href = "TV.html";
+        }
+    }
+    </script>
+</head>
+<body style="background-image: url(https://wallpaper-house.com/data/out/7/wallpaper2you_153044.jpg);background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
+    <div style="height: 100px;width: 100%;border: 0px solid darkblue;background-color: #7a15ffe9;";>
+        <h3>AAA E-MART </h3>
+        <a href="./Homeindex.html"><button id="button-2"><i class="fa-solid fa-house"></i></button> </a>  
+        <input style="border-radius: 45px; height: 32px;width: 343px;background-color: #f2ffee;" type="search"placeholder= "                     search your wishes here!!" >
+        <button id="button-1"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <select id="req" style="border-radius: 40px; height: 34px;width: 200px; color:blue">
+            <option>categories</option>
+            <option value="Mobile"> Mobiles</option>
+            <option value="Laptop">Laptops</option>
+            <option value="Fashion">Fashion</option>
+            <option value="TV">TV</option>
+            <option value="">Top offers</option>
+        </select>
+        <button onclick="social()">Next</button>
+        <a href="./cart.html"><button><i class="fa-solid fa-cart-shopping"></i></button></a>
+    </div>
+    <h2 style="text-align: center;" ><i class="fa-solid fa-tv"></i> SMART TELEVISIONS</h2>
+    <fieldset style="border: 0px;">
+        <h2 ><img style="width: 150px;" alt="Shop now" src="https://m.media-amazon.com/images/G/31/img21/TVs/Sabeer/BAU_JAN/JAN_ART/TV_teaser/janartbrandtile_LG_new._CB616911555_.jpg" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{}" style="max-width:100%;max-height:100%;"></h2>
+    </fieldset>
+    
+        <fieldset id="field-2"style="border: 0px;" >
+        <div class="container">
+            <table style="border:0px">
+                <tr>
+                    <th>
+                        <div  class="image">
+                        <img src="./TV images/LG/65 INCH ULTRA HD.jpg" alt="" height="220px" width="240px">
+                        </div>
+                    </th>
+                    <th>
+                        <div class="text">
+                        <fieldset style="height: 100px; width: 600px;margin-left:323px;">
+                        <h4><p>LG 65 INCH ULTRA HD</p><p> Price range Rs.<del>₹ 1124243</del><mark style="color: brown;">₹ 64599/-</mark><em> only</em> </p></h4>
+                        </fieldset>
+                        </div>
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <div class="container">
+            <table style="border: 0px;">
+                <tr>
+                    <th>
+                        <div class="image">
+                        <img src="./TV images/LG/LG 32 (81.28 cm).jpg" alt="" height="220px" width="240px">
+                        </div>
+                    </th>
+                    <th>
+                        <div class="text">
+                        <fieldset  style="height: 100px; width: 600px;margin-left:323px;">
+                        <h4><p> LG 32 (81.28 cm)</p><p> Price range Rs.<del>₹ 128,999</del><mark style="color: brown;">₹ 114599/-</mark><em> only </em></p></h4>
+                        </fieldset>
+                        </div>
+                    </th>
+                </tr>
+            </table>            
+        </div>
+
+        <div class="container">
+            <table style="border: 0px;">
+                <tr>
+                    <th>
+                        <div class="image">
+                        <img src="./TV images/LG/LG UQ75 43(108).jpg" alt="" height="220px" width="240px">
+                        </div>
+                    </th>
+                    <th>
+                        <div class="text">
+                        <fieldset  style="height: 100px; width: 600px;margin-left:323px;">
+                        <h4><p> LG UQ75 43(108)</p><p> Price range Rs.<del>₹ 56,999</del><mark style="color: brown;"> ₹ 51,999/-</mark><em>only</em>  </p></h4>
+                        </fieldset>
+                        </div>
+                    </th>
+                </tr>
+            </table>           
+        </div>
+
+        <div class="container">
+            <table style="border: 0px;">
+                <tr>
+                    <th>
+                        <div class="image">
+                        <img src="./TV images/LG/LG UQ75 43(108).jpg" alt="" height="220px" width="240px">
+                        </div>
+                    </th>
+                    <th>
+                        <div class="text">
+                        <fieldset  style="height: 100px; width: 600px;margin-left:323px; ">
+                        <h4><p>LG UQ55 43(108)</p><p> Price range Rs.<del>₹ 103,990</del><mark style="color: brown;"> ₹ 64,900/-</mark><em>only</em>  </p></h4>
+                        </fieldset>
+                        </div>
+                    </th>
+                </tr>
+            </table >            
+        </div>
+        <div class="container">
+            <table style="border: 0px;">
+                <tr>
+                    <th>
+                        <div class="image">
+                        <img src="./TV images/LG/LG UQ80 65.jpg" alt="" height="220px" width="240px">
+                        </div>
+                    </th>
+                    <th>
+                        <div class="text">
+                        <fieldset  style="height: 100px; width: 600px;margin-left:323px; ">
+                        <h4><p> LG UQ80 65</p><p> Price range Rs.<del>₹ 103,990</del><mark style="color: brown;"> ₹ 64,900/-</mark><em>only</em>  </p></h4>
+                        </fieldset>
+                        </div>
+                    </th>
+                </tr>
+            </table>            
+        </div>
+        </fieldset >
+        <fieldset style="border: 1px;width: 150px;">
+            <h2 ><img alt="Shop now" src="https://m.media-amazon.com/images/G/31/img21/TVs/Sabeer/BAU_JAN/JAN_ART/TV_teaser/janartbrandtile_Samsung_new._CB616911555_.jpg" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{}" style="max-width:100%;max-height:100%;"> </h2>
+        </fieldset>
+        <fieldset style="border: 0px;">
+        <div class="container">
+            <table style="border: 0px;">
+                <tr>
+                    <th>
+                        <div class="image">
+                        <img src="./TV images/samsung/98 inch NEO QLED 4K.jpg" alt="" height="220px" width="240px">
+                        </div>
+                    </th>
+                    <th>
+                        <div class="text">
+                        <fieldset  style="height: 100px; width: 600px;margin-left:323px; ">
+                        <h4><p>Samsung/98 inch NEO QLED 4K</p><p> Price range Rs.<del>₹ 103,990</del><mark style="color: brown;"> ₹ 64,900/-</mark><em>only</em>  </p></h4>
+                        </fieldset>
+                        </div>
+                    </th>
+                </tr>
+            </table>            
+        </div>
+        
+        
+        <div class="container">
+            <table>
+                <tr>
+                    <th>
+                        <div class="image">
+                        <img src="./TV images/samsung/Samsung 109.3 cm (43 inches).jpg" alt="" height="220px" width="240px">
+                        </div>
+                    </th>
+                    <th>
+                        <div class="text">
+                        <fieldset  style="height: 100px; width: 600px;margin-left:323px; ">
+                        <h4><p>Samsung 109.3 cm (43 inches)</p><p> Price range Rs.<del>₹ 103,990</del><mark style="color: brown;"> ₹ 64,900/-</mark><em>only</em>  </p></h4>
+                        </fieldset>
+                        </div>
+                    </th>
+                </tr>
+            </table>            
+        </div>
+        
+        
+        <div class="container">
+            <table>
+                <tr>
+                    <th>
+                        <div class="image">
+                        <img src="./TV images/samsung/Samsung 75 inch LED ULTRA(4K).jpg" alt="" height="220px" width="240px">
+                        </div>
+                    </th>
+                    <th>
+                        <div class="text">
+                        <fieldset  style="height: 100px; width: 600px;margin-left:323px; ">
+                        <h4><p>Samsung 75 inch LED ULTRA(4K)</p><p> Price range Rs.<del>₹ 103,990</del><mark style="color: brown;"> ₹ 64,900/-</mark><em>only</em>  </p></h4>
+                        </fieldset>
+                        </div>
+                    </th>
+                </tr>
+            </table>            
+        </div>
+        <div class="container">
+            <table>
+                <tr>
+                    <th>
+                        <div class="image">
+                        <img style="width: 233px;" alt="Samsung 108 cm (43 inches) Crystal 4K Neo Series Ultra HD Smart LED TV UA43AUE65AKXXL (Black)" src="https://images-eu.ssl-images-amazon.com/images/I/41Tz1YnJkoL._AC_SX184_.jpg" data-a-hires="https://images-eu.ssl-images-amazon.com/images/I/41Tz1YnJkoL._AC_SX368_.jpg">
+                        </div>
+                    </th>
+                    <th>
+                        <div class="text">
+                        <fieldset  style="height: 100px; width: 600px;margin-left:323px; ">
+                        <h4><p> Samsung 108 cm (43 inches) Crystal 4K Neo Series Ultra HD Smart LED TV UA43AUE65AKXXL (Black)</p><p> Price range Rs.<del>₹ 103,990</del><mark style="color: brown;"> ₹ 64,900/-</mark><em>only</em>  </p></h4>
+                        </fieldset>
+                        </div>
+                    </th>
+                </tr>
+            </table>            
+        </div>
+        </fieldset>
+        
+        </fieldset>
+        
+</body>
+</html>

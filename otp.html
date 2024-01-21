@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <title>Document</title>
+    <script>
+        let otp = Math.floor(Math.random()*999999);
+        alert(otp);
+        function verify(){
+            let verify_otp = document.getElementById("otp").value;
+            if(verify_otp==otp){
+                window.location.href = "Login.html";
+            }
+            else{
+                document.getElementById("res").innerHTML = "Incorrect or Invalid OTP";
+                document.getElementById("res").style.color = "yellow";
+                document.getElementById("res").style.marginLeft = "100px";
+            }
+        }
+        function resend(){
+            window.location.href = "otp.html";
+        }
+    </script>
+</head>
+<body style="background: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700321034-optimized.jpg);">
+    <br><br>
+    <fieldset style="background: url(https://i.pinimg.com/originals/03/53/11/0353116cd9880be4fb42b0111058c5e8.jpg); border: 0px;border-radius: 70px; width: 700px;background-color: rgb(206, 35, 35); margin:100px;margin-left: 400px; height: 500px;">
+        <br>
+        
+        <fieldset style="border: 0px;margin: 40px;margin-left:140px; height: fit-content;width: 400px;">
+        <legend style="margin-left: 35px;font-size: x-large; font-family:'Courier New', Courier, monospace;color:rgb(11, 252, 168);width:90%; "><strong style="margin-left: 100px;">O T P <br> V E R I F I C A T I O N</strong></legend>
+        <br>
+        <br>
+        <label style="margin-left: 150px; font-size:large;color: rgb(85, 213, 136);font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Enter OTP</label><br><br>
+        <input style="border: 0px solid black; width: 100%;height: 40px; background-color: rgba(228, 228, 228, 0);color:rgb(235, 231, 231)" type="text" placeholder="_______________________________________________________________________" id="otp"><br><br><br>
+        <button class="btn" style="border: 0px;background-color:tomato; border-radius: 20px;  margin-left: 100px;color:rgb(255, 255, 255);width: 40%; font-size: large;" onclick="verify()">Verify OTP</button>
+        <p  id="res"></p><br>
+        
+        <p style="color:rgb(90, 243, 66); margin-left: 64px;font-weight: 500;  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: large;" > <mark style="background-color: rgba(255, 255, 0, 0.993);border-bottom-left-radius: 20px;border-top-right-radius: 20px; border-right-style:solid;border-left-style: solid;"> Do you want to resend OTP?</mark></p>
+        <button class="btn btn-danger" style="border: 0px; border-radius: 20px; background-color:tomato;margin-left: 80px;color:lightgoldenrodyellow;width: 50%; font-size: large;" onclick="resend()">Resend OTP</button><br>
+        
+    </fieldset>
+</fieldset>
+
+    <script src="/bootstrap-3.4.1-dist/js/jquery.min.js"></script>
+    <script src="/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+    #main{
+            font-size: large;
+            
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row;
+            flex-direction: row-reverse; 
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        #main>div{
+            background-color: rgb(4, 111, 204);
+            margin: 100px;
+            padding: 10px;
+        }
+    div{
+        color: azure;
+    }
+    h3{
+            color: rgb(255, 26, 76);
+            text-shadow: 1px 2px rgb(13, 13, 14);
+            font-weight:bolder;
+            font-size: x-large;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color: rgb(10, 233, 200);
+            width: 100%;
+            
+        }
+        #button-1{
+            border-radius: 23px;
+            background-color: aqua;
+        }
+        #button-2{
+            color: rgb(7, 1, 1);
+            background-color: rgb(238, 240, 241);
+            height: 30px;
+        }
+</style>
+<script>
+        function social() {
+        var sam = document.getElementById("req").value;
+        if (sam == 'Mobile') {
+        window.location.href = "Mobile.html";
+        }
+        else if(sam == 'Laptop'){
+        window.location.href = "Laptop.html";
+        }
+        else if (sam == 'Fashion') {
+        window.location.href = "Fashion.html";
+        }
+        else if (sam == 'TV') {
+        window.location.href = "TV.html";
+        }
+    }
+    </script>
+<body style="background-image: url(https://cdn.create.vista.com/api/media/medium/461305144/stock-photo-pastel-geometric-background-minimal-mosaic?token=);background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
+    <div style="height: 100px;width: 100%;border: 0px solid darkblue;background-color: #7a15ffe9;";>
+        <h3>AAA E-MART </h3>
+        <a href="./Homeindex.html"><button id="button-2"><i class="fa-solid fa-house"></i></button> </a>
+        <input style="border-radius: 45px; height: 32px;width: 343px;background-color: #f2ffee;" type="search"placeholder= "                     search your wishes here!!" >
+        <button id="button-1"><i style="color: black;" class="fa-solid fa-magnifying-glass"></i></button>
+        <select id="req" style="border-radius: 40px; height: 34px;width: 200px; color:blue">
+            <option>categories</option>
+            <option value="Mobile"> Mobiles</option>
+            <option value="Laptop">Laptops</option>
+            <option value="Fashion">Fashion</option>
+            <option value="TV">TV</option>
+            <option value="">Top offers</option>
+        </select>
+        <button style="color: black;" onclick="social()">Next</button>
+        <a href="./cart.html"><button><i class="fa-solid fa-cart-shopping"></i></button></a>
+    </div>
+    <fieldset style="border: 0px ;">
+        <table>
+            <tr>
+                <th style="width: 10%;font-size: 30px;background-color: rgb(21, 247, 168);text-align: center;"><strong>LAPTOPS / GAMING LAPTOPS</strong> </th>
+            </tr>
+        </table>     
+    </fieldset>
+    <fieldset>
+
+    <fieldset style="border: 0px;padding-left:500px;"><br>
+        <img style="width: 234px;margin-left: 100px;" src="./Laptops images/AS.jpg" alt="">
+    </fieldset>
+
+    <fieldset id="main" style="width: 100%;border: 0px;">
+        
+        <table >
+            <tr>
+                <th>
+                <div >
+                <img  style="justify-content: space-between;height: 180px;width: 250px;" src="./Laptops images/ASUS/ASUS CORE I7 12 GEN.jpg" alt="">
+                <div style="color: black;">ASUS CORE I7 12 GEN <br>
+                        <strong>₹95823 M.R.P: ₹2,299 (57% off)
+</strong></div>
+                    </div>
+                </div>
+                </th>
+            
+                <th>
+                    <div><img  style="justify-content: space-between;height: 180px;width: 250px;" src="./Laptops images/ASUS/Asus Vivobook.jpg" alt="">
+                        <div style="color: black;">Asus Vivobook <br>
+                        <strong>₹79524 M.R.P: ₹2,299 (57% off)
+</strong></div>
+                        </div>
+                    </th>               
+                <th>
+                    <div>
+                        <img  style="justify-content: space-between;height: 180px;width: 250px;" src="./Laptops images/ASUS/ROG Zephyrus Duo 16.jpg" alt="">
+                        <div style="color: black;">ASUS/ROG Zephyrus Duo 16 <br>
+                        <strong>₹602349 M.R.P: ₹2,299 (57% off)
+</strong></div>
+                    </div>
+                </th>
+                <th>
+                    <div>
+                        <img  style="justify-content: space-between;height: 180px;width: 250px;" style="width: 200px;" src="./Laptops images/ASUS/X515.jpg" alt="">
+                        <div style="color: black;"> ASUS/X515<br>
+                        <strong>₹₹504 M.R.P: ₹2,299 (57% off)
+</strong></div>
+                    </div>
+                </th>
+                <th>
+                    <div>
+                        <img  style="justify-content: space-between;height: 180px;width: 250px;" style="width: 242px;" src="./Laptops images/ASUS/91zVSkGGZbS._AC_UL600_FMwebp_QL65_.jpg" alt="">
+                        <div style="color: black;"> ASUS TUF Gaming A15, 15.6-inch (39.62 cms) <br>
+                        <strong>₹₹504 M.R.P: ₹2,299 (57% off)
+</strong></div>
+                    </div>
+                </th>
+            </tr>
+
+        </table>
+    </fieldset>
+    </fieldset><br>
+    <fieldset>
+    <fieldset style="border: 0px;padding-left:500px;">
+        <img style="width: 234px;margin-left: 100px;" src="./Laptops images/dell_logo_.jpg" alt="">
+    </fieldset>
+
+    <fieldset id="main" style="border: 0px;">
+        <table>
+            <tr>
+                <th>
+                    <div><img style="justify-content: space-between;height: 180px;width: 250px;" src="./Laptops images/DELL/DELL INSPIRON 15 3000.jpg" alt=""></div>
+                    <div style="color: black;">DELL INSPIRON 15 3000
+                        ₹1,32369 M.R.P: ₹2,499 (45% off)</div>
+                </th>
+                <th>
+                    <div><img style="justify-content: space-between;height: 180px;width: 250px;" style="width: 190px;" src="./Laptops images/DELL/Dell Inspiron 5410 2021 Intel Core i3-.jpg" alt=""></div>
+                    
+                    <div style="color: black;">Dell Inspiron 5410 2021 Intel Core i3
+                        ₹1,33269 M.R.P: ₹2,499 (45% off)</div>
+                
+                </th>
+                <th>
+                    <div><img style="justify-content: space-between;height: 180px;width: 250px;" style="width: 200px;" src="./Laptops images/DELL/DELL INTEL INSPIRON 3511.jpg" alt=""></div>
+                    <div style="color: black;">DELL INTEL INSPIRON 3511
+                        ₹13,369 M.R.P: ₹2,499 (45% off)</div>
+                </th>
+                <th>
+                    <div><img style="justify-content: space-between;height: 180px;width: 250px;"  src="./Laptops images/DELL/INSPIRON 14 12 GEN INTEL CORE.jpg" alt=""></div>
+                    <div style="color: black;">INSPIRON 14 12 GEN INTEL CORE
+                        ₹123,369 M.R.P: ₹2,499 (45% off)</div>
+                </th>
+                <th>
+                    <div>
+                    <img style="width: 260px;" class="s-image" src="https://m.media-amazon.com/images/I/617Ob9YOSSL._AC_UL320_.jpg" srcset="https://m.media-amazon.com/images/I/617Ob9YOSSL._AC_UL320_.jpg 1x, https://m.media-amazon.com/images/I/617Ob9YOSSL._AC_UL480_QL65_.jpg 1.5x, https://m.media-amazon.com/images/I/617Ob9YOSSL._AC_UL640_QL65_.jpg 2x, https://m.media-amazon.com/images/I/617Ob9YOSSL._AC_UL800_QL65_.jpg 2.5x, https://m.media-amazon.com/images/I/617Ob9YOSSL._AC_UL960_QL65_.jpg 3x" alt="Dell Vostro 3420 Laptop, Intel Core i5-1135G7, 8GB/ 512GB SSD/ 14.0&quot; FHD WVA AG 250 nits/Win 11 + MSO'21/15 Month McAfee/C..." data-image-index="-1" data-image-load="" data-image-latency="s-product-image" data-image-source-density="1">
+                    <div style="color: black;">Dell Vostro 3420 Laptop, Intel Core i5-1135G7, 8GB/ 512GB SSD/ 14.0" FHD</div>
+                    </div>
+                </th>
+            </tr>
+        </table>
+    </fieldset>
+    </fieldset><br>
+    <fieldset>
+    <fieldset style="border: 0px;padding-left:500px;">
+        <img style="width: 234px;margin-left: 100px;" src="./Laptops images/hp logo.jpeg" alt="">
+    </fieldset>
+    <fieldset id="main" style="border: 0px;">
+        <table>
+            <tr>
+                <th>
+                    <div>
+                        <img style="margin-left: 10px;justify-content: space-between;" src="./Laptops images/HP/HP  Pavilion 14.jpg" alt="">
+                    </div>
+                    <div style="color: black;">HP  Pavilion 14 <br>₹549 M.R.P: ₹91,099 (50% off)</div>
+
+                </th>
+                <th>
+                    <div>
+                        <img style="margin-left: 10px;justify-content: space-between;" src="./Laptops images/HP/HP  Pavilion 15s.jpg" alt="">
+                    </div>
+                    <div style="color: black;">HP  Pavilion 15s<br>₹709 M.R.P: ₹81,499 (53% off)</div>
+                </th>
+                <th>
+                    <div>
+                        <img style="margin-left: 10px;justify-content: space-between;" src="./Laptops images/HP/HP 300 core i3 7th Gen.jpg" alt="">
+                    </div>
+                    <div style="color: black;">HP 300 core i3 7th Gen<br>₹74749 M.R.P: ₹1,499 (50% off)</div>
+                </th>
+                <th>
+                    <div><img style="margin-left: 10px;justify-content: space-between;" src="./Laptops images/HP/HP Notebook.jpg" alt=""></div>
+                    <div style="color: black;">HP Notebook<br>₹999 M.R.P: ₹61,999 (50% off)</div>
+                </th>
+                <th>
+                    <div><img style="margin-left: 10px;justify-content: space-between;height: 180px;width: 250px;margin-top: 20px;"  src="./Laptops images/HP/Rysen.jpg" alt=""></div>
+                    <div style="color: black;">HP Victus Gaming Latest AMD Ryzen 7 5800H, 16.1-inch(40.9 cm) FHD Gaming Laptop</div>
+                </th>
+                <th>
+                    
+                </th>
+            </tr>
+        </table>
+    </fieldset>
+    </fieldset>
+</body>
+</html>

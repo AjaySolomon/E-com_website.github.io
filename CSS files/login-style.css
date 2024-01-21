@@ -1,0 +1,31 @@
+* {
+    /* color:darkblue; */
+    margin:10px 105px; padding:4px;
+    /* text-align:center; */
+
+}
+h1.hover{
+    background-color: aqua;
+
+}
+
+
+
+h1{
+    color: brown;
+    text-align: center;
+    text-decoration:darkorange;
+
+}
+body{
+    text-align: center;
+    font-style: oblique;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #cccccc;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./CSS files/login-style.css">  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <title>Document</title> 
+</head>
+<style>
+    body{
+        margin:50px ;
+        margin-left: 530px;
+        padding: 23px;
+        font-size:medium;
+        margin-top: 23px;
+        background-color: #ffffff;
+        height: 600px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        width: 20%;
+    }
+    input{
+        width: 60%;
+        background-color: lightgoldenrodyellow;
+    }
+    h3{
+        text-align: center;
+    }
+    h1{
+        color: #4bf7a4;
+        text-align:center;
+        
+    }
+    h1:hover{
+        color: rgb(18, 30, 253);
+    }
+    fieldset{
+        background-color:rgba(27, 34, 169, 0.578);
+        border: 0px;   
+        width: 100%;
+        
+    }
+    #button1{
+        margin-left: 92px;
+        height: 25px;
+        width: 70px;
+        
+    }
+    #button2{
+        margin-left: 62px;
+        height: 35px;
+        width: 150px;
+        background-color: lightskyblue;
+    }
+</style>
+<script>
+        function login()
+        {
+            var db = {'Ajayan_rocks':'Ajay@105','Venkat_soul':'Password#123','Remo':'Nandhi@123'};
+            var user_name = document.getElementById("user").value;
+            var pass_word = document.getElementById("pass").value;
+            var key_array = Object.keys(db);
+            var flag = false;
+            for(var i=0;i<key_array.length;i++)
+            {
+                if(key_array[i]==user_name)
+                {
+                    if(db[key_array[i]] == pass_word)
+                    {
+                        flag = true;
+                    }
+                }
+            }
+            if(flag == true)
+            {
+                window.location.href ="Homeindex.html";
+            }
+            else{
+                document.getElementById("res").innerHTML = "Invalid username or Incorrect password!!!!";
+                document.getElementById("res").style.marginLeft = '40px';
+                
+            }
+        }
+    </script>
+<body style="background-image: url('https://wallpaperaccess.com/full/2314950.jpg');background-repeat: no-repeat;background-size: cover;background-attachment: fixed;">
+    <div>
+    <fieldset style=" border-radius: 25px;height: 480px;width: 400px;">
+    <fieldset style="border: 1px solid rgb(0, 0, 0);background-color:rgb(0, 169, 236);width:50px;margin-left: 170px;border-radius: 80px;font-size: xx-large;"><i style="margin-left: 10px;" class="fa-regular fa-user"></i></fieldset>
+    <h3 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: x-large;color:rgb(238, 255, 124);margin-right:23px;"> LOGIN</h3>
+    <label><i style="margin-left: 50px;" class="fa-sharp fa-solid fa-user"></i></label> <input  id="user" style="border-radius: 20px;height: 30px;width: 250px;" type="text"  placeholder="          enter username"><br><br><br>
+
+    <i style="margin-left: 50px;" class="fa-sharp fa-solid fa-lock"></i> <input id="pass" style="border-radius: 20px;height: 30px;width: 250px;" type="password" placeholder="          enter password"><br><br><br>
+
+    <button class="btn btn-warning" onclick="login()" id="button1" style="border: 0px; margin-left: 150px;border-radius: 20px;color:rgb(84, 31, 31);">Login</button></a> <br><br>
+
+    <a href="./Forgot-ps.html"><button id= "button2" style="border: 0px; margin-left: 110px;border-radius: 20px;color: rgb(243, 52, 195);">Forgot password</button></a><br><br>
+    <p id="res" style="color:rgb(242, 255, 0);font-size: large;margin-left: 15px;"></p>
+    <label style="padding-left: 102px;color: aquamarine;">Are you a new user?</label> 
+    <a href="./Signup.html"><button id="button1" style="border-radius: 10px; margin-left: 10px;color: rgb(140, 39, 235);">Signup</button></a>
+    </fieldset>
+    <g-ripple class="aaU6gd rLdWfe" jscontroller="KbYvUc" jsdata="SMQQFe;_;BKbPFg" jsaction="yYNR0b;rcuQ6b:npT2md"><div jsname="AHe6Kc" class="MDfoTd"></div><div jsname="yA8yjc" class="hdqIFe"></div></g-ripple>
+    </div>   
+    <script src="/bootstrap-3.4.1-dist/js/jquery.min.js"></script>
+    <script src="/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS files/login-style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin:3px 0px; padding:2px;
+            text-align:center;
+            
+        }
+        h3{
+            color: rgb(255, 26, 76);
+            text-shadow: 1px 2px rgb(13, 13, 14);
+            font-weight:bolder;
+            font-size: x-large;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color: rgb(10, 233, 200);
+            width: 100%;
+            
+        }
+        button{
+            height: 30px;
+            width: 75px;
+            background-color:#0022ff;
+            color: white;
+        }
+        #button-1{
+            border-radius: 23px;
+            background-color: aqua;
+        }
+        #button-2{
+            color: rgb(7, 1, 1);
+            background-color: rgb(238, 240, 241);
+            height: 30px;
+        }
+        img{
+            border: 3px solid rgb(15, 14, 15);
+            border-radius: 23 px;
+            
+        }
+        h5{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: justify;
+            font-size: medium;
+        }
+        p{
+            text-align:justify;
+            margin:10px; 
+        }
+        #field-1{ 
+            border: 1px solid black;
+            border-width: 2px;
+        }
+        #field-2{ 
+            border: 2px solid black;
+            border-radius: 35px;
+            border-width: 3px;
+            width: 50px;
+        }
+        .container {
+            display: grid;
+            align-items: center; 
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 1px;
+        }
+
+        img {
+            max-width: 100%;
+            
+        }
+        
+        .text {
+            font-size:large;
+        }
+    </style>
+    <script>
+        function social() {
+        var sam = document.getElementById("req").value;
+        if (sam == 'Mobile') {
+        window.location.href = "Mobile.html";
+        }
+        else if(sam == 'Laptop'){
+        window.location.href = "Laptop.html";
+        }
+        else if (sam == 'Fashion') {
+        window.location.href = "Fashion.html";
+        }
+        else if (sam == 'TV') {
+        window.location.href = "TV.html";
+        }
+    }
+    </script>
+</head>
+<body style="background-image: url(./bg1.jpg);background-repeat: no-repeat;background-size: cover;background-attachment: fixed;">
+    
+    <fieldset id="field-1" style="border: 0px solid darkblue;background-color: #7a15ffe9;">
+        <h3>AAA E-MART </h3>
+        <button id="button-2"><i class="fa-solid fa-house"></i></button>  
+        <input style="border-radius: 45px; height: 32px;width: 343px;background-color: #f2ffee;" type="search"placeholder= "                     search your wishes here!!" >
+        <button id="button-1"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <select id="req" style="border-radius: 40px; height: 34px;width: 200px; color:blue">
+            <option>categories</option>
+            <option value="Mobile"> Mobiles</option>
+            <option value="Laptop">Laptops</option>
+            <option value="Fashion">Fashion</option>
+            <option value="TV">TV</option>
+            <option value="">Top offers</option>
+        </select>
+        <button onclick="social()">Next</button>
+        <a href="./cart.html"><button><i class="fa-solid fa-cart-shopping"></i></button></a>
+        </fieldset>
+        <fieldset style="border: 0px;">
+            <table>
+                <tr >
+                    <th style="width: 15%;"><img style="margin-left: 50px;" src="./BG images/Mobile.jpg" alt="">
+                        <div><a href="./Mobile.html"><button>MOBILES</button> </a></div>
+                    </th>
+
+                    <th style="width: 20%;"><img style="margin-left: 100px;" src="./BG images/laptop.jpg" alt=""><div><a href="./Laptop.html"><button>LAPTOPS</button></a> </div></th>
+
+                    <a href="./Fashion.html"></a><th style="width: 15%;"><img style="margin-left: 60px;" src="./BG images/fashion.jpg" alt=""><div><a href="./Fashion.html"><button> FASHION</button></a> </div></th>
+
+                    <th style="width: 20%;"><img style="margin-left: 100px;" src="./BG images/TV.jpg" alt=""><div><a href="./TV.html"><button> TV</button></a></div></th>
+
+                    <th style="width: 10%;"><img src="./BG images/Top offers.jpg" alt=""><div><button style="width: fit-content;">TOP OFFERS</button> </div></th>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset style="border: 0px;">
+            <li id="sobe_d_b_6_4" class="sl-sobe-carousel-sub-card celwidget csm-placement-id-0728c21b-f59b-4a4c-bef7-754f3d2c4ab7_4 csm-widget-ref-QAHzEditorial_en_IN_4 csm-pageid-1389401031 csm-widget-type-herotator-tile csm-widget-tile-4" data-csa-c-id="rtl9f6-ec6z4-h5sgc1-t6pgt2" data-cel-widget="sobe_d_b_6_4">
+                                    <a href="/dp/B0BYN5555J/ref=QAHzEditorial_en_IN_4?pf_rd_r=SJZ0V32V49BB9PGK0MZ4&amp;pf_rd_p=0728c21b-f59b-4a4c-bef7-754f3d2c4ab7&amp;pf_rd_m=A1VBAL9TL5WCBF&amp;pf_rd_s=merchandised-search-6&amp;pf_rd_t=&amp;pf_rd_i=1389401031&amp;ie=UTF8&amp;ref_=CLP_MH3_Cathero4_Redmi12C" class="sl-sobe-carousel-sub-card-link">
+                                        <div class="sl-sobe-carousel-sub-card-image">
+                                            <img alt="" src="https://m.media-amazon.com/images/G/31/img23/Wireless/Xiaomi/Redmi/12C/GW/8499_may17th/D81081988_INWLD_Redmi_12C_SIM_1400x800._CB588323196_.jpg" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{}" style="width: 60%;max-height:30%;border-radius:33px;">
+                                            
+                                            
+                                                <div class="sl-sobe-carousel-live-text" >
+                                                        
+                                                </div>
+                                            
+                                        </div>
+                                        
+                                    </a>
+                                </li>
+        </fieldset>
+        
+        <fieldset style="border: 0px;">
+            <table>
+                <tr >
+                    <th style="font-size: x-large;font-weight: 900;text-decoration: black;width: 10%;"><strong>IPHONE Mobiles
+                    </strong></th>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset style="border: 0px;">
+            <table>
+                <tr>
+                    <th style="border: 0px solid black;">
+                        <div class="first">
+                        <a href=""><div>Apple-iPhone-14-Pro</div><div><img alt="Mobiles" src="./Mobile images/IPHONE Mobiles/Apple-iPhone-14-Pro-.jpg"style="height:250px;width:250px;"></div></div></a>
+                    </th>
+                    <th style="border: 0px solid black;">
+                        <div class="first">
+                        <a href=""><div>apple-iphone-11</div><div><img alt="Mobiles" src="./Mobile images/IPHONE Mobiles/apple-iphone-11.jpg"style="height:250px;width:250px"></div></div></a>
+                    </th>
+                    <th style="border: 0px solid black;">
+                        <div class="first">
+                        <a href=""><div>iphone 12 (128GB)</div><div><img alt="Mobiles" src="./Mobile images/IPHONE Mobiles/iphone 12 (128GB).jpg"style="height:250px;width:250px"></div></div></a>
+                    </th>
+                    <th style="border: 0px solid black;">
+                        <div class="first">
+                        <a href=""><div>Iphone 13 128GB</div><div><img alt="Mobiles"  src="./Mobile images/IPHONE Mobiles/Iphone 13 128GB.png"style="height:250px;width:250px;background-color: aliceblue;"></div></div></a>
+                    </th>
+                    <!-- <th style="border: 0px solid black;">
+                        <div class="first">
+                        <a href=""><div>IPHONE XS</div><div><img alt="Mobiles" src="./Mobile images/IPHONE Mobiles/IPHONE XS.jpg"style="height:250px;width:250px"></div></div></a>
+                    </th> -->
+                    <th>
+                        <a href="./IPHONE.html"><button id="button1" style="height: 40px;width: 100px; color: aliceblue;"> VIEW ALL</button></a>
+                    </th>
+                    
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset style="border: 0px;">
+            <table>
+                <tr >
+                    <th style="font-size: x-large;font-weight: 900;text-decoration: black;width: 10%;"><strong>ONEPLUS Mobiles</strong></th>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset style="border: 0px;">
+            <table>
+                <tr>
+                    <th style="border: 0px solid black;">
+                        <div class="first">
+                        <a href=""><div>Oneplus 10 Pro 5G</div><div><img alt="Mobiles" src="./Mobile images/ONEPLUS Mobiles/Oneplus 10 Pro 5G.jpg"style="height:250px;width:250px;"></div></div></a>
+                    </th>
+                    <th style="border: 0px solid black;">
+                        <div class="first">
+                        <a href=""><div>Oneplus 11 5G</div><div><img alt="Mobiles" src="./Mobile images/ONEPLUS Mobiles/oneplus 11 5G.jpg"style="height:250px;width:250px"></div></div></a>
+                    </th>
+                    <th style="border: 0px solid black;">
+                        <div class="first">
+                        <a href=""><div>Oneplus 11R 5G</div><div><img alt="Mobiles" src="./Mobile images/ONEPLUS Mobiles/oneplus 11R 5G.jpg"style="height:250px;width:250px"></div></div></a>
+                    </th>
+                    <th style="border: 0px solid black;">
+                        <div class="first">
+                        <a href=""><div>Oneplus Nord CE 2 Lite 5G</div><div><img alt="Mobiles" src="./Mobile images/ONEPLUS Mobiles/oneplus Nord CE 2 Lite 5G.jpg"style="height:250px;width:250px"></div></div></a>
+                    </th>
+                    <!-- <th style="border: 0px solid black;">
+                        <div class="first">
+                        <a href=""><div>Oneplus Nord CE 3 Lite 5G</div><div><img alt="Mobiles" src="./Mobile images/ONEPLUS Mobiles/oneplus Nord CE 3 Lite 5G.jpg"style="height:250px;width:250px"></div></div></a>
+                    </th> -->
+                    <th>
+                        <a href="./ONEPLUS.html"><button id="button1" style="height: 40px;width: 100px;"> VIEW ALL</button></a>
+                    </th>
+                    
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset style="border: 0px;">
+            <table>
+                <tr >
+                    <th style="font-size: x-large;font-weight: 900;text-decoration: black;width: 10%;"><strong>REDMI Mobiles</strong></th>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset style="border: 0px;">
+            <table>
+                <tr>
+                    <th style="border: 0px solid black;">
+                        <div class="first">
+                        <a href=""><div>Redmi 10 Prime</div><div><img alt="Mobiles" src="./Mobile images/REDMI Mobiles/Redmi 10 Prime.jpg"style="height:250px;width:250px;"></div></div></a>
+                    </th>
+                    <th style="border: 0px solid black;">
+                        <div class="first">
+                        <a href=""><div>Redmi note 10</div><div><img alt="Mobiles" src="./Mobile images/REDMI Mobiles/Redmi note 10.png"style="height:250px;width:250px"></div></div></a>
+                    </th>
+                    <th style="border: 0px solid black;">
+                        <div class="first">
+                        <a href=""><div>Redmi Note 11(6GB + 128GB)</div><div><img alt="Mobiles" src="./Mobile images/REDMI Mobiles/Redmi Note 11(6GB + 128GB).jpg"style="height:250px;width:250px;background-color:white"></div></div></a>
+                    </th>
+                    <th style="border: 0px solid black;">
+                        <div class="first">
+                        <a href=""><div>Redmi note 9</div><div><img alt="Mobiles" src="./Mobile images/REDMI Mobiles/Redmi note 9.png"style="height:250px;width:250px;background-color:white"></div></div></a>
+                    </th>
+                    <!-- <th style="border: 0px solid black;">
+                        <div class="first">
+                        <a href=""><div>REDMI-NOTE-11S</div><div><img alt="Mobiles" src="./Mobile images/REDMI Mobiles/REDMI-NOTE-11S-.jpg"style="height:250px;width:250px"></div></div></a>
+                    </th> -->
+                    <th>
+                        <a href="./REDMI.html"><button id="button1" style="height: 40px;width: 100px;"> VIEW ALL</button></a>
+                    </th>
+                    
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset style="border: 0px;">
+        <table>
+            <tr>
+                <th>
+                    <div><img style="width: 60%;" class="s-image" src="https://m.media-amazon.com/images/I/71lKPL9GNtL._AC_UL400_.jpg" srcset="https://m.media-amazon.com/images/I/71lKPL9GNtL._AC_UL400_.jpg 1x, https://m.media-amazon.com/images/I/71lKPL9GNtL._AC_UL600_FMwebp_QL65_.jpg 1.5x, https://m.media-amazon.com/images/I/71lKPL9GNtL._AC_UL800_FMwebp_QL65_.jpg 2x, https://m.media-amazon.com/images/I/71lKPL9GNtL._AC_UL1000_FMwebp_QL65_.jpg 2.5x, https://m.media-amazon.com/images/I/71lKPL9GNtL._AC_UL1200_FMwebp_QL65_.jpg 3x" alt="Van Heusen Men Shirt" data-image-index="1" data-image-load="" data-image-latency="s-product-image" data-image-source-density="1"></div>
+                    <div>Van Heusen <br> Men Shirt</div>
+                    <div>₹1,369 M.R.P: ₹2,499 (45% off)</div>
+                </th>
+                <th>
+                    <div><img style="width: 60%;" class="s-image" src="https://m.media-amazon.com/images/I/61Yaoh5DZiL._AC_UL400_.jpg" srcset="https://m.media-amazon.com/images/I/61Yaoh5DZiL._AC_UL400_.jpg 1x, https://m.media-amazon.com/images/I/61Yaoh5DZiL._AC_UL600_FMwebp_QL65_.jpg 1.5x, https://m.media-amazon.com/images/I/61Yaoh5DZiL._AC_UL800_FMwebp_QL65_.jpg 2x, https://m.media-amazon.com/images/I/61Yaoh5DZiL._AC_UL1000_FMwebp_QL65_.jpg 2.5x, https://m.media-amazon.com/images/I/61Yaoh5DZiL._AC_UL1200_FMwebp_QL65_.jpg 3x" alt="Van Heusen Men's Regular Fit Shirt" data-image-index="4" data-image-load="" data-image-latency="s-product-image" data-image-source-density="1"></div>
+                    <div>Van Heusen <br> Men Shirt</div>
+                    <div>₹1,369 M.R.P: ₹2,499 (45% off)</div>
+                </th>
+                <th>
+                    <div><img style="width: 60%;" class="s-image" src="https://m.media-amazon.com/images/I/61ezlqUuyOL._AC_UL400_.jpg" srcset="https://m.media-amazon.com/images/I/61ezlqUuyOL._AC_UL400_.jpg 1x, https://m.media-amazon.com/images/I/61ezlqUuyOL._AC_UL600_FMwebp_QL65_.jpg 1.5x, https://m.media-amazon.com/images/I/61ezlqUuyOL._AC_UL800_FMwebp_QL65_.jpg 2x, https://m.media-amazon.com/images/I/61ezlqUuyOL._AC_UL1000_FMwebp_QL65_.jpg 2.5x, https://m.media-amazon.com/images/I/61ezlqUuyOL._AC_UL1200_FMwebp_QL65_.jpg 3x" alt="Van Heusen Solid Cotton Blend Regular Men's Formal Shirt" data-image-index="11" data-image-load="" data-image-latency="s-product-image" data-image-source-density="1"></div>
+                    <div>Van Heusen <br> Men Shirt</div>
+                    <div>₹1,369 M.R.P: ₹2,499 (45% off)</div>
+                </th>
+                <th>
+                    <div><img style="width: 60%;" class="s-image" src="https://m.media-amazon.com/images/I/91wEPNqa8-L._AC_UL400_.jpg" srcset="https://m.media-amazon.com/images/I/91wEPNqa8-L._AC_UL400_.jpg 1x, https://m.media-amazon.com/images/I/91wEPNqa8-L._AC_UL600_FMwebp_QL65_.jpg 1.5x, https://m.media-amazon.com/images/I/91wEPNqa8-L._AC_UL800_FMwebp_QL65_.jpg 2x, https://m.media-amazon.com/images/I/91wEPNqa8-L._AC_UL1000_FMwebp_QL65_.jpg 2.5x, https://m.media-amazon.com/images/I/91wEPNqa8-L._AC_UL1200_FMwebp_QL65_.jpg 3x" alt="Van Heusen Men's Slim Fit Shirt" data-image-index="16" data-image-load="" data-image-latency="s-product-image" data-image-source-density="1"></div>
+                    <div>Van Heusen <br> Men Shirt</div>
+                    <div>₹1,369 M.R.P: ₹2,499 (45% off)</div>
+                </th>
+                <th>
+                    <img style="width: 80%;" src="./fashion/van-heusen-logo.png" alt="">
+                </th>
+            </tr>
+        </table>
+    </fieldset>
+        <!-- <fieldset>
+            <table>
+                <tr >
+                    <th style="font-size: x-large;font-weight: 900;text-decoration: black;width: 10%;"><strong>SAMSUNG Mobiles</strong></th>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <table>
+                <tr>
+                    <th style="border: 0px solid black;">
+                        <div class="first">
+                        <a href=""><div>Samsung A23</div><div><img alt="Mobiles" src="./Mobile images/SAMSUNG Mobiles/samsung A23.jpg"style="height:250px;width:250px;"></div></div></a>
+                    </th>
+                    <th style="border: 0px solid black;">
+                        <div class="first">
+                        <a href=""><div>Samsung M13</div><div><img alt="Mobiles" src="./Mobile images/SAMSUNG Mobiles/Samsung M13.jpg"style="height:250px;width:250px"></div></div></a>
+                    </th>
+                    <th style="border: 0px solid black;">
+                        <div class="first">
+                        <a href=""><div>Samsung M33 5G 128GB</div><div><img alt="Mobiles" src="./Mobile images/SAMSUNG Mobiles/Samsung M33 5G 128GB.jpg"style="height:250px;width:250px"></div></div></a>
+                    </th>
+                    <th style="border: 0px solid black;">
+                        <div class="first">
+                        <a href=""><div>Samsung S21 FE 5G</div><div><img alt="Mobiles" src="./Mobile images/SAMSUNG Mobiles/samsung S21 FE 5G.jpg"style="height:250px;width:250px"></div></div></a>
+                    </th>
+                    <th style="border: 0px solid black;">
+                        <div class="first">
+                        <a href=""><div>Samsung-M536BE</div><div><img alt="Mobiles" src="./Mobile images/SAMSUNG Mobiles/Samsung-M536BE.jpg"style="height:250px;width:250px"></div></div></a>
+                    </th> -->
+                    <th>
+                        <a href="./Fashion.html"><button id="button1" style="height: 40px;width: 100px;"> VIEW ALL</button></a>
+                    </th>
+                    
+                </tr>
+            </table>
+        </fieldset>
+        <br><br><br>
+        <fieldset style="border: 0px;">
+            <table>
+                <tr >
+                    <th style="font-size: x-large;font-weight: 900;text-decoration: black;width: 10%;"><strong>VIVO Mobiles</strong></th>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset style="border: 0px;">
+            <table>
+                <tr>
+                    <th style="border: 0px solid black;">
+                        <div class="first">
+                        <a href=""><div>Vivo T2x 5G</div><div><img alt="Mobiles" src="./Mobile images/VIVO Mobiles/vivo T2x 5G.png"style="height:250px;width:250px;"></div></div></a>
+                    </th>
+                    <th style="border: 0px solid black;">
+                        <div class="first">
+                        <a href=""><div>Vivo V27 5G</div><div><img alt="Mobiles" src="./Mobile images/VIVO Mobiles/Vivo V27 5G.png"style="height:250px;width:250px"></div></div></a>
+                    </th>
+                    <th style="border: 0px solid black;">
+                        <div class="first">
+                        <a href=""><div>Vivo V27</div><div><img alt="Mobiles" src="./Mobile images/VIVO Mobiles/Vivo V27.jpg"style="height:250px;width:250px"></div></div></a>
+                    </th>
+                    <th style="border: 0px solid black;">
+                        <div class="first">
+                        <a href=""><div>Vivo Y35 128GB</div><div><img alt="Mobiles" src="./Mobile images/VIVO Mobiles/Vivo Y35 128GB.jpg"style="height:250px;width:250px"></div></div></a>
+                    </th>
+                    
+                    <th >
+                        <a href="./VIVO.html"><button id="button1" style="height: 40px;width: 100px;"> VIEW ALL</button></a>
+                    </th>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+    <fieldset style="border: 0px;">
+            <label style="font-size: x-large;font-weight: 900;text-decoration: black;width: 10%;"><strong>DELL LAPTOPS</strong></label> 
+    </fieldset>
+        <fieldset style="border: 0px;">
+        <table>
+            <tr>
+                <th>
+                    <div><img style="width: 290px;height: 200px;" src="./Laptops images/DELL/DELL INSPIRON 15 3000.jpg" alt=""></div>
+                    <div>DELL INSPIRON 15 3000</div>
+                    <div>₹1,32369 M.R.P: ₹2,499 (45% off)</div>
+                </th>
+                <th>
+                    <div><img style="width: 190px;" src="./Laptops images/DELL/Dell Inspiron 5410 2021 Intel Core i3-.jpg" alt=""></div>
+                    
+                    <div>Dell Inspiron 5410 2021 Intel Core i3</div>
+                    <div>₹1,33269 M.R.P: ₹2,499 (45% off)</div>
+                
+                </th>
+                <th>
+                    <div><img style="width: 200px;" src="./Laptops images/DELL/DELL INTEL INSPIRON 3511.jpg" alt=""></div>
+                    <div>DELL INTEL INSPIRON 3511</div>
+                    <div>₹13,369 M.R.P: ₹2,499 (45% off)</div>
+                </th>
+                <th>
+                    <div><img style="width: 290px;height: 200px;" src="./Laptops images/DELL/INSPIRON 14 12 GEN INTEL CORE.jpg" alt=""></div>
+                    <div>INSPIRON 14 12 GEN INTEL CORE</div>
+                    <div>₹123,369 M.R.P: ₹2,499 (45% off)</div>
+                </th>
+                <th>
+                    <div>
+                        <img style="width: 150px;height: 100px;margin-bottom: 70px;" src="./Laptops images/dell_logo_.jpg" alt="">
+                    </div>
+                </th>
+            </tr>
+        </table>
+    </fieldset>
+    </fieldset><br>
+        <!-- <div>
+        <div class="first">
+            <a href=""><div></div><div style="height: 120px; width: 4px;"><img alt="Mobiles" src="./Mobile images/VIVO Mobiles/vivo T2x 5G.png"></div></div><div>VIVO Mobiles</div></a>
+
+        </div>
+        <div class="second">
+            <a href=""><div><div style="height:120px; width: 4px;"><img alt="Mobiles" src="./Mobile images/IPHONE Mobiles/apple-iphone-11.jpg"></div></div><div>IPHONE Mobiles</div></a>
+
+        </div>
+        <div class="second">
+            <a href=""><div><div style="height:120px; width: 4px;"><img alt="Mobiles" src="./Mobile images/ONEPLUS Mobiles/Oneplus 10 Pro 5G.jpg"></div></div><div>ONEPLUS Mobiles</div></a>
+
+        </div>
+        <div class="second">
+            <a href=""><div><div style="height:120px; width: 4px;"><img alt="Mobiles" src="./Mobile images/REDMI Mobiles/Redmi note 10.png"></div></div><div>REDMI Mobiles</div></a>
+
+        </div>
+        <div class="second">
+            <a href=""><div><div style="height:160px; width: 4px;"><img alt="Mobiles" src="./Mobile images/SAMSUNG Mobiles/samsung S21 FE 5G.jpg"></div></div><div>SAMSUNG Mobiles</div></a>
+
+        </div> 
+        </div>-->
+        
+
+        <!-- <img alt="image" sizes="100vw" srcset="https://img.poorvika.com/cdn-cgi/image/width=1900,height=600,quality=75/HomePage-Banner/Main-Banner/Samsung/may/Samsung-A34-A54-Web-Banner-Site-View-01.jpg 640w, https://img.poorvika.com/cdn-cgi/image/width=1900,height=600,quality=75/HomePage-Banner/Main-Banner/Samsung/may/Samsung-A34-A54-Web-Banner-Site-View-01.jpg 750w, https://img.poorvika.com/cdn-cgi/image/width=1900,height=600,quality=75/HomePage-Banner/Main-Banner/Samsung/may/Samsung-A34-A54-Web-Banner-Site-View-01.jpg 828w, https://img.poorvika.com/cdn-cgi/image/width=1900,height=600,quality=75/HomePage-Banner/Main-Banner/Samsung/may/Samsung-A34-A54-Web-Banner-Site-View-01.jpg 1080w, https://img.poorvika.com/cdn-cgi/image/width=1900,height=600,quality=75/HomePage-Banner/Main-Banner/Samsung/may/Samsung-A34-A54-Web-Banner-Site-View-01.jpg 1200w, https://img.poorvika.com/cdn-cgi/image/width=1900,height=600,quality=75/HomePage-Banner/Main-Banner/Samsung/may/Samsung-A34-A54-Web-Banner-Site-View-01.jpg 1920w, https://img.poorvika.com/cdn-cgi/image/width=1900,height=600,quality=75/HomePage-Banner/Main-Banner/Samsung/may/Samsung-A34-A54-Web-Banner-Site-View-01.jpg 2048w, https://img.poorvika.com/cdn-cgi/image/width=1900,height=600,quality=75/HomePage-Banner/Main-Banner/Samsung/may/Samsung-A34-A54-Web-Banner-Site-View-01.jpg 3840w" src="https://img.poorvika.com/cdn-cgi/image/width=1900,height=600,quality=75/HomePage-Banner/Main-Banner/Samsung/may/Samsung-A34-A54-Web-Banner-Site-View-01.jpg" decoding="async" class="banner_image_responsivedata__1Bi1r" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; filter: none; background-size: cover; background-image: none;">  -->
+
+    
+    <script src="/bootstrap-3.4.1-dist/js/jquery.min.js"></script>
+    <script src="/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
